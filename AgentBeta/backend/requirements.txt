@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pypdf
+scikit-learn
+transformers
+safetensors
+requests
+python-dotenv
