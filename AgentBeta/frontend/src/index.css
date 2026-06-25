@@ -835,6 +835,32 @@ body {
   display: flex;
   flex-direction: column;
   height: calc(100vh - 240px);
+  background-color: #fff9ae !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 12px rgba(218, 182, 0, 0.06) !important;
+  padding: 0 !important;
+  backdrop-filter: none !important;
+}
+
+.queue-panel h3 {
+  background-color: #f8ed62;
+  color: #0F172A;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px 16px 0 0;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.queue-panel > p {
+  color: var(--primary-blue);
+  padding: 0 16px;
+  padding-top: 12px;
+  font-size: 11px;
+  margin: 0;
 }
 
 .queue-items {
@@ -843,28 +869,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-right: 6px;
+  padding: 16px;
 }
 
 .queue-card {
   padding: 16px;
   border-radius: 12px;
   border: 1px solid var(--glass-border);
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: var(--bg-secondary);
   cursor: pointer;
   text-align: left;
   transition: all 200ms ease;
 }
 
 .queue-card:hover {
-  border-color: rgba(1, 158, 236, 0.25);
-  background-color: rgba(255, 255, 255, 0.02);
+  border-color: rgba(2, 132, 199, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
 }
 
 .queue-card.active {
-  background-color: rgba(1, 158, 236, 0.05);
   border-color: var(--primary-blue);
-  box-shadow: 0 0 16px rgba(1, 158, 236, 0.1);
+  background-color: rgba(2, 132, 199, 0.02);
+  box-shadow: 0 0 12px rgba(2, 132, 199, 0.08);
 }
 
 .reasoning-panel {
